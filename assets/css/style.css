@@ -1,7 +1,3 @@
-@import url(font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
 
 html, body, div, span,
@@ -17,6 +13,10 @@ menu, nav, output, section {
     color: black;
 }
 
+::selection {
+  background: #ffd21f; 
+}
+
 body {
 	font-family: 'Lato', sans-serif;
     font-size: 24px;
@@ -28,6 +28,16 @@ ol, ul {
 }
 
 a {
+    text-decoration: none;
+    border-bottom: 2px solid currentColor;
+    border-color: #ffd21f;
+}
+
+.nav-item-link {
+    border-bottom: none;
+}
+
+.active-nav-item {
     text-decoration: none;
     border-bottom: 2px solid currentColor;
     border-color: #ffd21f;
@@ -95,7 +105,7 @@ strong {
 }
 
 #home-banner-content {
-       position: relative;
+    position: relative;
     /* height: 500px; */
     top: 10%;
     transform: translateY(50%);
@@ -140,6 +150,7 @@ img {
     text-transform: uppercase;
 }
 
+
 #footer {
     top: 0;
     background: white;
@@ -183,3 +194,8 @@ blockquote:hover {
     width: 200px;
     float: right;
 }
+
+ .backwards {
+     unicode-bidi:bidi-override; 
+     direction: rtl;
+} 

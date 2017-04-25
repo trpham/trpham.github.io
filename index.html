@@ -18,30 +18,17 @@
 
 <body>
 
-
-
     <!-- Tab Menu -->
-
-
     <div id="nav" class="clearfix">
         <div id="nav-logo">Nathan T. Pham</div>
         <div id="nav-menu">
-            <div class="nav-item"><a href="#">Home</a></div>
-            <div class="nav-item"><a href="#">About</a></div>
-            <div class="nav-item"><a href="#">Work</a></div>
-            <div class="nav-item"><a href="#">Projects</a></div>
-            <div class="nav-item"><a href="#">Contact</a></div>
+            <div class="nav-item"><a href="#" class="nav-item-link active-nav-item">Home</a></div>
+            <div class="nav-item"><a href="#work" class="nav-item-link">About</a></div>
+            <div class="nav-item"><a href="#work" class="nav-item-link">Work</a></div>
+            <div class="nav-item"><a href="#project" class="nav-item-link">Projects</a></div>
+            <div class="nav-item"><a href="#footer" class="nav-item-link">Contact</a></div>
         </div>
-    </div>
-
-    <!--<hr></hr>-->
-
-     <!--<div id="background-cover">
-            <div id="cover-background"><img class="fit-width" src="" /></div>
-            <div id="cover-overlay"></div>
-        </div>-->
-
-             
+    </div>             
 
     <div id="content">
 
@@ -51,7 +38,7 @@
                 <h2>My name is <strong>Nathan Pham</strong>, an enthusiastic Software Engineer based in the Bay Area CA, passionate about Webdev, VR, entrepreneurship and design.</h2>
 
                 <a href="#" id="home-banner-button">About Me &rarr;</a>
-                <a href="#" id="home-banner-button">See My Work &rarr;</a>
+                <a href="#" id="home-banner-button">Resume &rarr;</a>
             </div>
         </div>
 
@@ -64,28 +51,56 @@
 
         <div id="work">
             <h2>Work</h2>
-            <div class="project-item" id="gitlet">
-            <h3><a href="#">Research Assistant</a></h3>
-            <h3><a href="#">Berkeley Institute for Data Science (BIDS)</a></h3>
+
+            <div class="project-item" id="adobe">
+            <h3><a>Software Engineer Intern</a></h3>
+            <h3><a>Adobe</a></h3>
+            <h4>San Francisco, CA | Jun 2017 - Aug 2017</h4>
+            <p>- Intern on the Adobe Creative Cloud SDK team.</p>
+            </div>
+
+            <div class="project-item" id="bids">
+            <h3><a>Research Assistant</a></h3>
+            <h3><a href="https://bids.berkeley.edu/">Berkeley Institute for Data Science (BIDS)</a></h3>
             <h4>UC Berkeley | Sep 2016 – Present</h4>
             <p>- Works with the BIDS Machine Shop team to develop the Python 2D plotting library Matplotlib, which produces publication quality figures in different formats and interactive environments across platforms.- Implements new algorithms, fixes bugs and enhances the overall package.</p>
             </div>
 
-            <div class="project-item" id="gitlet">
-            <h3><a href="#">Software Engineer Intern</a></h3>
-            <h3><a href="#">Rakuten</a></h3>
+            <div class="project-item" id="rakuten">
+            <h3><a>Software Engineer Intern</a></h3>
+            <h3><a href="https://global.rakuten.com/corp/worldwide/">Rakuten</a></h3>
             <h4>San Mateo, CA | May 2016 - Sep 2016</h4>
             <p>Worked with the Mobile Ecosystem Team to develop the Content Delivery Platform, which helps mobile developers to quickly update app content.- Developed a prototype Cordova app with embedded Microsoft Code Push.- Set up an integration testing workflow with WebDriverIO, Mocha and Chai.- Wrote CI bash script for integration with Microsoft Azure’s services.- Developed a mock-up version of Super Point Screen, with options to toggle between slider-view vs grid-view, implement lazy-loading and infinite-scrolling.</p>
+            </div>
+
+            <div class="project-item" id="tutor">
+            <h3><a>Math Tutor/TA</a></h3>
+            <h3><a>Laney College</a></h3>
+            <h4>Oakland, CA | Fall 2013 - Spring 2015</h4>
+            <p>- Tutored math for 40+ students in lectures, one-to-one and group tutoring.- Helped instructors manage lectures and explained in-class problem sets.- Explained concepts, guided students through online lab assignments.</p>
             </div>
         </div>
 
         <hr></hr>
 
         <div id="project">
-        <h2>Side Projects</h2>
+        <h2>Projects</h2>
+
+
+        <div class="project-item" id="lenbo">
+            <h3><a href="https://devpost.com/software/lenbo">Lenbo</a></h3>
+            <p>Lenbo is a marketplace that lets people lend and borrow items with ease, knowing that they are able to trust lender and borrower.</p>
+        </div>
+
+        <div class="project-item" id="wall-of-founder">
+            <h3><a href="https://github.com/trpham/sef-founderwall">Wall of Founders</a></h3>
+            <p>- Built a Rails web application for Sankara Eye Foundation that helped its donors to review, edit and share their dedications. - Developed donor management system, consent collection form, searching/sorting data, social media sharing and an engaging UI.</p>
+        </div>
+
         <div class="project-item" id="gitlet">
-            <h3><a href="#">Gitlet</a></h3>
-            <p>A version control system called Gitlet that mimicked some of the features of the popular version-control system Git.</p>
+            <h3><a href="https://github.com/trpham/Git">Gitlet</a></h3>
+            <p>- Used cryptographic hash function SHA-1, Java’s serialization, I/O and Collections classes to build a mimic version of Git
+. - Implemented 15+ commands that support backups of directories/files, restore backup, maintain branches and merge changes</p>
         </div>
 
         <div class="project-item" id="car">
@@ -93,15 +108,14 @@
             <p>The car recognizes 4 different voice commands: move forward, slow down, turn left, and turn right.</p>
         </div>
 
-
         <div  class="project-item" id="gratitude">
-            <h3><a href="#">Gratitude Journal</a></h3>
+            <h3><a href="https://github.com/trpham/GratitudeJournal">Gratitude Journal</a></h3>
             <p>A web application where users can post their daily gratitudes either publicly or privately to support their friends and live happier lives. Develop using Ruby, Bootstrap, jQuery, Ruby on Rails.</p>
         </div>
 
 
         <div  class="project-item" id="vr-cafe">
-            <h3><a href="#">VR Cafe</a></h3>
+            <h3><a href="http://eaglevision.herokuapp.com/">VR Cafe</a></h3>
             <p>A Web Experiment with A-Frame.js that bring VR experience to the web. The app idea is using VR as a new way to interact with customers and to promote the company products and services by calling its API. HTML, CSS, JavaScript, Node.js.</p>
         </div>
 
@@ -109,36 +123,25 @@
         <hr></hr>
 
         <div id="footer">
-            <blockquote>“... the crazy ones, the misfits, the rebels, the troublemakers, the round pegs in the square holes, the ones who see things differently ...”<cite>— Steve Jobs</cite></blockquote>
-      
-            
+            <blockquote>“The people who are crazy enough to think they can change the world, are the ones who do.”<cite>— Steve Jobs</cite></blockquote>
     
       
-          <div class="contact">
-              <p>Let's chat!</p>
-              <a>phamcse@gmail.com</a>
-            </div>
+        <div class="contact">
+            <p>Let's chat!</p>
+            <a class="backwards">moc.liamg@escmahp</a>
+        </div>
 
-            <div class="socials">
-              <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Github</a></li>
-              </ul>
-            </div>
-          <!--<p class="copyright">LET'S CHANGE THE WORLD TOGETHER <span>&hearts;</span></p>-->
-
+        <div class="socials">
+            <ul>
+            <li><a href="https://www.linkedin.com/in/phamcse/">LinkedIn</a></li>
+            <li><a href="https://github.com/trpham">Github</a></li>
+            </ul>
+        </div>
 
         
     </div>
     
-
-
-
     <script src="assets/js/jquery.min.js"></script>
-
     <script src="assets/js/index.js"></script>
 
 </body>
